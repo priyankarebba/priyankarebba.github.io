@@ -1,159 +1,220 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Priyanka Rebba | Portfolio</title>
-    <style>
-        body {
-            font-family: Arial, Helvetica, sans-serif;
-            margin: 0;
-            background-color: #f4f6f9;
-            color: #333;
-        }
-        header {
-            background-color: #2c3e50;
-            color: #ffffff;
-            padding: 30px 20px;
-            text-align: center;
-        }
-        header h1 {
-            margin-bottom: 8px;
-        }
-        header p {
-            margin: 4px 0;
-        }
-        header a {
-            color: #ffffff;
-            margin: 0 8px;
-            text-decoration: underline;
-        }
-        section {
-            background: #ffffff;
-            margin: 20px;
-            padding: 20px;
-            border-radius: 8px;
-        }
-        h2 {
-            color: #2c3e50;
-            border-bottom: 2px solid #eee;
-            padding-bottom: 5px;
-        }
-        ul {
-            padding-left: 20px;
-        }
-        li {
-            margin-bottom: 8px;
-        }
-        footer {
-            background-color: #222;
-            color: white;
-            text-align: center;
-            padding: 15px;
-            margin-top: 30px;
-        }
-    </style>
+    <title>Priyanka | Portfolio</title>
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- box icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
+
 <body>
 
-<header>
-    <h1>Priyanka Rebba</h1>
-    <p>B.Tech – Computer Science and Engineering</p>
-    <p>BVRIT Hyderabad College of Engineering for Women</p>
-    <p>
-        📧 22wh1a05j0@bvrithyderabad.edu.in | 📞 +91-9347485149
-    </p>
-    <p>
-        <a href="https://github.com/priyankarebba/" target="_blank">GitHub</a> |
-        <a href="https://linkedin.com/in/PRIYANKA%20REBBA/" target="_blank">LinkedIn</a>
-    </p>
-</header>
+    <!-- header design -->
+    <header class="header">
+        <a href="#" class="logo">Portfolio</a>
+        <i class='bx bx-menu' id="menu-icon"></i>
 
-<section>
-    <h2>Education</h2>
-    <ul>
-        <li>
-            <strong>B.Tech in Computer Science and Engineering</strong><br>
-            BVRIT Hyderabad College of Engineering for Women<br>
-            CGPA: 8.61
-        </li>
-        <li>
-            <strong>Senior Secondary (State Board)</strong><br>
-            Sri Chaitanya Junior College<br>
-            Percentage: 97.7%
-        </li>
-        <li>
-            <strong>Secondary (Telangana Board)</strong><br>
-            Sri Chaitanya Techno School<br>
-            CGPA: 10
-        </li>
-    </ul>
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#projects">Projects</a>
+            <a href="#achievements">Achievements</a>
+            <a href="#certificates">Certificates</a>
+        </nav>
+    </header>
+
+    <!-- home section -->
+    <section class="home" id="home">
+        <div class="home-content">
+            <h3>Hello, It's Me</h3>
+            <h1>Rebba Priyanka</h1>
+
+            <p>
+                I am a B.Tech CSE student at BVRIT Hyderabad, with hands-on experience in
+<strong>AI, Machine Learning, Full-Stack Web Development, and Open Source</strong>.
+Passionate about building impactful AI solutions, scalable systems, and user-centric applications.
+            </p>
+
+            <div class="social-media">
+                <a href="https://www.linkedin.com/in/priyanka-rebba-b58053259/" target="_blank">
+                    <i class='bx bxl-linkedin'></i>
+                </a>
+                <a href="https://github.com/priyankarebba" target="_blank">
+                    <i class='bx bxl-github'></i>
+                </a>
+                <a href="https://leetcode.com/u/Priyanka_rebba/" target="_blank">
+                    <i class='bx bx-code'></i>
+                </a>
+            </div>
+
+          <a href="22WH1A05J0%20-PRIYANKA%20REBBA.pdf" download class="btn">
+    Download Resume
+</a>
+
+
+        </div>
+
+        <div class="home-img">
+            <img src="pictures.jpeg" alt="Priyanka Rebba">
+        </div>
+    </section>
+
+    <!-- projects section -->
+    <section class="projects" id="projects">
+        <h2 class="heading">My <span>Projects</span></h2>
+
+        <div class="services-container">
+
+            <div class="services-box">
+                <i class='bx bx-extension'></i>
+                <h3>MarketMind</h3>
+                <p>
+                   Built an AI-powered pipeline leveraging Large Language Models (LLMs) and clustering to segment customers based on unstructured data like feedback and reviews.
+                </p>
+                <a href="https://github.com/priyankarebba/MARKETMIND" class="btn" target="_blank">View Project</a>
+            </div>
+
+            <div class="services-box">
+                <i class='bx bx-leaf'></i>
+                <h3>HouseEase</h3>
+                <p>
+                   Developed a full-stack web application for property browsing and booking, enabling users to rent or
+purchase homes and property owners to list properties seamlessly.
+                </p>
+                <a href="https://gitlab.com/22wh1a05j0/houseease" class="btn" target="_blank">View Project</a>
+            </div>
+
+            <div class="services-box">
+                <i class='bx bxs-heart'></i>
+                <h3>Face Mask Detection</h3>
+                <p>
+                   Developed a customized CNN model for face mask detection, achieving an impressive 97% accuracy. This
+high accuracy highlights the model’s effectiveness in identifying whether individuals are wearing masks
+correctly.
+                </p>
+                <a href="https://github.com/priyankarebba/Face-Mask-Detection" class="btn" target="_blank">
+                    View Project
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- achievements section -->
+    <section class="achievements" id="achievements">
+        <h2 class="heading">My <span>Achievements</span></h2>
+
+        <div class="achievements-container">
+
+            <div class="achievement-box">
+                <i class='bx bx-chip'></i>
+                <h3>Support Engineer Intern – Amazon</h3>
+                <p>
+                    Worked as a Support Engineer Intern, gaining hands-on experience with
+production systems and cloud-based workflows using AWS technologies.
+                </p>
+            </div>
+
+            <div class="achievement-box">
+                <i class='bx bxs-medal'></i>
+                <h3>All India Women Hackathon</h3>
+                <p>Participated in the All India Women Hackathon organized by Shooting Stars,
+where an innovative technical idea was proposed and submitted for evaluation.</p>
+            </div>
+
+            <div class="achievement-box">
+                <i class='bx bx-trophy'></i>
+                <h3>Strong Academic Performer</h3>
+                <p>
+                    Consistently performed well academically with a CGPA of 8.61, demonstrating strong fundamentals in computer science and related subjects.
+                </p>
+            </div>
+
+            <div class="achievement-box">
+                <i class='bx bx-group'></i>
+                <h3>Volunteer & Event Coordinator</h3>
+                <p>
+                    Actively supported college technical and cultural events through coordination and teamwork.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+   <!-- certificates and training section -->
+<section class="certificates" id="certificates">
+    <h2 class="heading">My <span>Training & Certifications</span></h2>
+
+    <div class="certificates-training-container">
+
+        <!-- Training Box -->
+        <div class="trainings-box">
+            <h3>Training & Mentorship</h3>
+
+            <!-- <div class="certificate-box">
+                <p><strong>Amazon ML Summer School 2025</strong><br>
+                Selected Mentee – Girls Leading Tech</p>
+            </div> -->
+
+            <div class="certificate-box">
+                <p><strong>Machine Learning</strong><br>
+                NASSCOM</p>
+            </div>
+
+            <div class="certificate-box">
+                <p><strong>Data Structures & Algorithms</strong><br>
+                Being Zero</p>
+            </div>
+
+            <div class="certificate-box">
+                <p><strong>Full-Stack Web Development – MERN Stack</strong><br>
+                Hands-on Industry Training - Atenas Code</p>
+            </div>
+        </div>
+
+        <!-- Certifications Box -->
+        <div class="certificates-box">
+            <h3>Certifications</h3>
+
+            <div class="certificate-box">
+                <p>HackerRank – Python (Basic)</p>
+            </div>
+
+            <div class="certificate-box">
+                <p>HackerRank – SQL (Basic)</p>
+            </div>
+
+            <div class="certificate-box">
+                <p>Full Stack Development using MERN Stack – Atenas Code</p>
+            </div>
+
+            <!-- <div class="certificate-box">
+                <p>Diploma in Computer Applications (DCA)<br>
+                <small>MS Office (Excel, PowerPoint)</small></p>
+            </div> -->
+        </div>
+
+    </div>
 </section>
 
-<section>
-    <h2>Experience</h2>
-    <ul>
-        <li>
-            <strong>Support Engineer Intern – Amazon</strong><br>
-            July 14, 2025 – December 19, 2025<br>
-            Developing a command-line Harbinger Agentic Solution integrating AWS Bedrock.
-        </li>
-    </ul>
-</section>
+    <!-- footer -->
+    <footer class="footer">
+        <div class="footer-text">
+            <p>© 2026 Priyanka Rebba | All Rights Reserved</p>
+        </div>
 
-<section>
-    <h2>Projects</h2>
-    <ul>
-        <li>
-            <strong>MarketMind: Customer Segmentation using LLMs</strong><br>
-            Built an AI-powered pipeline using Large Language Models and clustering to segment customers based on unstructured feedback and reviews.<br>
-            <em>Technologies:</em> Hugging Face Transformers, KMeans, PCA, t-SNE, Python, Google Colab, scikit-learn, pandas
-        </li>
-        <li>
-            <strong>HouseEase</strong><br>
-            Developed a full-stack web application for property browsing, renting, and purchasing.<br>
-            <em>Technologies:</em> MongoDB, React.js, HTML, CSS, Node.js, Express.js
-        </li>
-        <li>
-            <strong>Face Mask Detection</strong><br>
-            Designed a 10-layer CNN model achieving 97% accuracy for face mask detection using an 80–20 dataset split.<br>
-            <em>Technologies:</em> TensorFlow, Keras, NumPy, scikit-learn
-        </li>
-    </ul>
-</section>
+        <div class="footer-iconTop">
+            <a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
+        </div>
+    </footer>
 
-<section>
-    <h2>Skills</h2>
-    <ul>
-        <li><strong>Machine Learning:</strong> TensorFlow, Keras, scikit-learn, NumPy, Pandas, LLMs</li>
-        <li><strong>Full Stack Development:</strong> React.js, Node.js, Express.js, MongoDB, HTML, CSS, JavaScript</li>
-        <li><strong>Programming Languages:</strong> Java, Python, C</li>
-        <li><strong>Soft Skills:</strong> Adaptability, Problem Solving, Critical Thinking, Communication, Teamwork</li>
-    </ul>
-</section>
-
-<section>
-    <h2>Key Courses</h2>
-    <ul>
-        <li>Data Structures and Algorithms</li>
-        <li>Machine Learning</li>
-        <li>Computer Networks</li>
-        <li>Database Management Systems</li>
-        <li>Operating Systems</li>
-    </ul>
-</section>
-
-<section>
-    <h2>Extracurricular Activities</h2>
-    <ul>
-        <li>Volunteer – Organized college events</li>
-        <li>Sports – Active badminton player</li>
-    </ul>
-</section>
-
-<footer>
-    <p>© 2026 Priyanka Rebba | Portfolio</p>
-</footer>
-
+    <!-- scripts -->
+    <script src="script.js"></script>
 </body>
+
 </html>
